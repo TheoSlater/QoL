@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "qol",
+  "version": "${version}",
+  "name": "QoL",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/qol/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "org.theoslater.qol.client.QolDataGenerator"
+    ],
+    "client": [
+      "org.theoslater.qol.client.QolClient"
+    ],
+    "main": [
+      "org.theoslater.qol.Qol"
+    ],
+    "modmenu": [
+      "org.theoslater.qol.client.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "qol.mixins.json",
+    {
+      "config": "qol.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
