@@ -22,7 +22,6 @@ public class ModConfig implements ConfigData {
         }
     }
 
-    public boolean autoSortEnabled = true;
     public boolean pickupNotificationsEnabled = true;
     public float pickupTextScale = 1f;
     public float pickupTextSpacing = 10f;

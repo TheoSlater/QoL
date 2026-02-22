@@ -4,7 +4,7 @@
   "package": "org.theoslater.qol.client.mixin",
   "compatibilityLevel": "JAVA_21",
   "client": [
-    "CrawlMixin", "InventoryScreenMixin"
+    "CrawlMixin"
   ],
   "injectors": {
     "defaultRequire": 1
